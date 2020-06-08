@@ -17,7 +17,7 @@
     },
     "scripts": {
         "start": "set REACT_APP_DOMAIN=123 && react-scripts start",
-        "start:pre": "set REACT_APP_DOMAIN=abc && react-scripts start",
+        "start:pre": "dotenv -e .env.pre react-scripts start",
         "build": "react-scripts build",
         "build:pre": "dotenv -e .env.pre react-scripts build",
         "test": "react-scripts test",
