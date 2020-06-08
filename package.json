@@ -16,8 +16,10 @@
         "typescript": "^3.7.5"
     },
     "scripts": {
-        "start": "react-scripts start",
+        "start": "set REACT_APP_DOMAIN=123 && react-scripts start",
+        "start:pre": "set REACT_APP_DOMAIN=abc && react-scripts start",
         "build": "react-scripts build",
+        "build:pre": "dotenv -e .env.pre react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },

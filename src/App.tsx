@@ -18,6 +18,10 @@ function App() {
                 >
                   Learn React
                 </a>
+
+                {
+                    process.env.REACT_APP_DOMAIN
+                }
             </header>
         </div>
     );
